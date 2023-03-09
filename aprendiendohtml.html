@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, td,th {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Esto es un comentario con sus signos de apertura y cierre -->
+        <p>Esto es un párrafo que contiene un <strong>Resaltado</strong> de la palabra <em>resaltado</em></p>
+        
+    <!-- #region Enlaces:-->
+        <!-- Segmento dedicado a ver como trabajar los Enlaces-->
+        <!-- Enlace común-->
+        <a href="https://barrioprivadoaltoverdesa.com/#!/-bienvenido/">Barrio Alto Verde</a>
+
+        <!-- Enlace en pestaña nueva-->
+        <a href="http://barrioprivadoaltoverdesa.com/#!/-bienvenido/" target="_blank" rel="noopener noreferrer">Barrio AV nueva pestaña</a>
+
+        <!-- Enlace con imagenes-->
+        <a href="http://barrioprivadoaltoverdesa.com/#!/-bienvenido/" target="_blank" rel="noopener noreferrer">
+            <img src="https://static.dw.com/image/56661148_303.jpg" alt=""></a>
+    <!-- #endregion Enlaces:-->
+    
+    <!-- #region Imagenes:-->
+        <!-- Segmento dedicado a ver como trabajar imagenes-->
+        <img src="desarrolloWeb.jpg" alt="imagen de muestra" width="600" height="400">
+    <!-- #endregion Imagenes: -->
+   
+    <!-- #region Tablas:-->
+        <table>
+            <tr> <!-- tr permite crear una fila -->
+                <th>Nombre</th> <!-- td permite crear la fila como título ó encabezado -->
+                <th>Apellido</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Marcelo</td> <!-- td permite crear la fila -->
+                <td rowspan="2">Bautista</td> <!-- rowspan permite combinar las celdas de una columna -->
+                <td>email@email.com</td>
+            </tr>
+            <tr>
+                <td>Ana Inés</td>
+                <td>emai@email</td>
+            </tr>
+            <tr>
+                <td>Ana Cecilia</td>
+                <td>Aguirre</td>
+                <td>email@email.com</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Maria Paula Bautista Aguirre</td> <!-- colspan permite combinar las celdas de una fila -->
+                <td>email@email.com</td>
+            </tr>
+        </table>
+    <!-- #endregion -->
+    
+    <!-- #region Listas:-->
+        <ul> <!-- ul nos permite crear una lista desordenada (que no asigna números a sus ítems)-->
+            <li>Cebolla</li><!-- li nos permite crear un ítem de la lista -->
+            <li>Huevos</li>
+            <li>Fruta <!-- de este modo se pueden crear las sublistas -->
+                <ul>
+                    <li>Manzana</li>
+                    <li>Banana</li>
+                    <li>Peras</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ol> <!-- ol nos permite crear una lista ordenada (que asigna números a sus ítems)-->
+            <li>Cebolla</li><!-- li nos permite crear un ítem de la lista -->
+            <li>Huevos</li>
+            <li>Fruta <!-- de este modo se pueden crear las sublistas -->
+                <ol>
+                    <li>Manzana</li>
+                    <li>Banana</li>
+                    <li>Peras</li>
+                </ol>
+            </li>
+        </ol>
+    <!-- #endregion Listas -->
+
+    <!-- #region Formularios:-->
+        <form action="">
+            <!--Tipos comunes de input de textos o email-->
+                <label for="nombre">Nombre:</label> <!-- Etiqueta de un input-->
+                <input type="text" id="nombre" name="name"><!-- Input de tipo texto-->
+
+            <!--Input de areas de textos ó textos largos-->
+                <label for="big_text">Textos Largos</label>
+                <textarea name="narracion" id="big_text" cols="90" rows="7"></textarea>
+            
+            <!--Tipo de input de selección ó cuadro combinado-->
+                <label for="selector">Opciones</label>
+                <select name="opciones" id="selector">
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="white">Blanco</option>
+                </select>
+
+            <!--Input de Botones-->
+                <button type="submit">Botón</button>
+        
+        </form>
+            
+            <!--Prueba de carga de formulario con sus controles-->
+                <form action="submit">
+                    <label for="iname">Nombre:</label>
+                    <input type="text" id="iname" name="iname">
+
+                    <label for="ilastname">Apellido:</label>
+                    <input type="text" id="ilastname" name="ilastname">
+
+                    <label for="iemail">Email:</label>
+                    <input type="email" id="iemail" name="iemail">
+
+                    <label for="ipass">Contraseña:</label>
+                    <input type="password" id="ipass" name="ipass">
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear Fomulario">
+                    
+
+
+
+                </form>
+            
+
+        
+    <!-- #endregion Formularios-->
+
+    </body>
+</html>
