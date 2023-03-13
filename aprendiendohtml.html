@@ -13,6 +13,7 @@
                 padding: 10px;
             }
         </style>
+        <!--<link rel="stylesheet" href="css/estilos.css">-->
     </head>
     <body>
         <!-- Esto es un comentario con sus signos de apertura y cierre -->
@@ -157,13 +158,36 @@
                     <br>
                     <input id="chgreen" type="checkbox" name="green" value="red">
                     <label for="chgreen">Verde</label>
+                    <br>
+                    <input type="color" value="#ff0000" name="color">
+                    <label for="color">Elegir Color</label>
+                    <br>
+                    <br>
+                    <input type="date" id="start" name="trip-start" value="2023-11-24" min="2022-11-24" max="2023-12-24">
+                    <label for="start">Día Arranque:</label>
+                    <br>
+                    <input type="file" name="archivo">
+                    <label for="archivo">Seleccionar archivo</label>
+                    <br>
+                    <input type="range" name="rango" min="0" max="30">
+                    <label for="rango">Seleccione el rango</label>
 
 
-                </form>
-            
+                </form>           
 
-        
     <!-- #endregion Formularios-->
 
+    <!-- #region Bloques: -->
+        <!-- El elemento de bloque ocupa todo el ancho de la fila, comienza en una nueva
+        <address></address> <article></article><form action=""></form><h1></h1> <div>
+        -->
+
+        <!-- El elemento en linea ocupa solo lo minimo requerido y sus componentes pueden
+        ocupar una misma linea, Ej:
+            <time>  <sub> <select>
+        -->
+
+
+    <!-- #endregion Bloques:-->
     </body>
 </html>

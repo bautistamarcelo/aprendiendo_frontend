@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;500;700;800 & display=swap');
+/*@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;500;700;800 & display=swap');*/
 
 :root {
     --azulOscuro: #1e2853;
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,4 +31,18 @@ html {
 
 body {
     background: var(--arena);
+}
+h1{
+    padding: 20px;
+    margin: 25px;
+    background-color: #182153;
+    color: #e5e5e5;
+}
+p{
+    text-align: justify;
+    color: antiquewhite;
+    background-color: #46517a;
+    font-size: 18px;
+    margin: 25px;
+    padding: 10px;
 }
